@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Check Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="city-search">
+        <form  class="search" method="post" action="">
+            <input type="text" name="city" placeholder="Enter City Name" spellcheck="false">
+            <input type="submit"  name="submit" value="submit">
+        </form>
+        <div>
+        </div>
+        <div class="date">
+            <p id="fullDate"></p>
+        </div>
+        <div class="error">
+            <p>Invalid city name entered</p>
+        </div>
+        <div class="weather">
+            <div class="main">
+                <h1 id="city"></h1>
+                <div class="image-container">
+                    <img src="img/cloudy.png" class= "weather-icon" alt="">
+                    <img src="img/cloudy.png" class= "weather-icon backgorund-effect" alt="">
+                </div>
+                <h2 class="weather-condition"> weather condition change</h2>
+                <h2 id="temp"></h2>
+            </div>
+            <div class="detail-wrapper">
+                <div class="details">
+                    <div class="detail-item">
+                        <img src="img/cloudy.png" alt="">
+                        <div>
+                            <p id="humidity"></p>
+                            <h3>Humidity</h3>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <img src="img/cloudy.png" alt="">
+                        <p id="wind"></p>
+                        <div>
+                            <h3>Wind</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="detail-item">
+                        <img src="img/haze.png" alt="">
+                        <div>
+                            <p id="pressure"></p>
+                            <h3>Pressure</h3>
+                        </div>
+                    </div>
+                    
+                        </div>
+                    </div>
+                </div>
+                <a href="index.php" class="history">view history</a>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
